@@ -1,0 +1,22 @@
+version: "3"
+services:
+  api:
+    container_name: rest-api
+    restart: always
+    ports:
+      - "3000:3000"
+    build: .
+    environment:
+      MONGODB_URI: mongodb://mongo:27017/system
+    depends_on:
+      - mongo
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - dbdata:/data/db
+volumes:
+  dbdata:

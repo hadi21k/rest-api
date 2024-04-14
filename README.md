@@ -30,7 +30,7 @@ This project is a REST API built with the following technologies:
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/your-project-name.git
+git clone https://github.com/hadi21k/rest-api.git
 ```
 
 2. Install dependencies:
